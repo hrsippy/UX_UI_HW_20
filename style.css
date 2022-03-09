@@ -2,40 +2,40 @@ body {
 	margin: 0% !important;
 	padding: 0% !important; 
 	background: white;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Roboto';
 }
 
 /*Typography*/
 
 h1{
 	color: black;
-	font-size: 36px;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 48px;
+	font-family: 'Roboto';
 }
 
 h2 {
 	color: black;
-	font-size: 24px;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 36px;
+	font-family: 'Roboto';
 }
 
 h3 {
 	color: black;
-	font-size: 17px;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 24px;
+	font-family: 'Roboto';
 
 }
 
 p {
 	color: black;
-	font-size: 14px;
+	font-size: 17px;
 	font-weight: bold;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Roboto';
 }
 
 li {
 	color: black;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Roboto';
 	font-size: 18px;
 }
 /*End Typography*/
@@ -126,12 +126,13 @@ li {
 .quickLinks {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	background-color: #E73F34;
 	height: auto;
 	margin-top: -3px;
 	padding-top: 30px;
 	padding-bottom: 10px;
+	padding-right: 35px;
 }
 
 .quickLinksItem {
@@ -144,6 +145,14 @@ li {
 	height: auto;
 }
 
+.vlflex {
+	justify-self: center;
+	border-right: 2px solid rgba(0, 0, 0, .15); 
+	height: auto;
+	width: 20px;
+	margin: 40px 20px 22px 0px;
+}
+
 /*End Quick Link*/
 
 
@@ -151,17 +160,52 @@ li {
 
 .upcomingEvents {
 	list-style-type: none;
-	padding-left: 230px;
 	display: flex;
+	justify-content: space-between;
 	flex-direction: row;
-	height: 675px;
+	flex-wrap: wrap;
+	height: auto;
+	padding-left: 30px;
+	margin-right: 30px;
 }
 
+.eventBtn {
+	width: 200px;
+	background-color: #4A4A4A;
+	color: white;
+	font-weight: bold;
+	border-radius: 15px;
+	height: 35px;
+}
+
+.btnBox {
+	height: 80px;
+	margin: 5px auto;
+	display: flex;
+	align-items: center;
+}
+.upcomingEvents div {
+	font-size: 20px;
+}
+.eventsList {
+	display: flex;
+	flex: 42.75%;
+	flex-direction: column;
+}
+
+.upcomingEvents h2 {
+	font-size: 40px;
+}
+
+.hl {
+	border-top: 2px solid rgba(0, 0, 0, .15); 
+}
 .feb15 {
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 	align-items: center;
+	padding: 20px 0;
 }
 
 .bodyText1 {
@@ -173,6 +217,7 @@ li {
 	flex-direction: row;
 	align-content: center;
 	align-items: center;
+	padding: 20px 0;
 }
 
 .bodyText2 {
@@ -184,6 +229,7 @@ li {
 	flex-direction: row;
 	align-content: center;
 	align-items: center;
+	padding: 10px 0;
 }
 
 .bodyText3 {
@@ -195,6 +241,7 @@ li {
 	flex-direction: row;
 	align-content: center;
 	align-items: center;
+	padding: 10px 0;
 }
 
 .bodyText4 {
@@ -203,23 +250,28 @@ li {
 
 .infoSection {
 	list-style-type: none;
-	padding-left: 120px;
 }
 
 .dual {
+	padding-top: 20px;
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 	align-items: center;
-	width: 625px;
+}
+
+.dual img {
+	float: left;
 }
 
 .bodyText5 {
-	padding-left: 15px;
+	padding: 0 30px;
+	line-height: 30px;
 }
 
 .bodyText6 {
-	padding-left: 15px;
+	padding: 0 30px;
+	line-height: 30px;
 }
 
 .parent {
@@ -227,11 +279,13 @@ li {
 	flex-direction: row;
 	align-content: center;
 	align-items: center;
-	width: 625px;
+	margin-bottom: auto;
 }
 
 .info {
-	padding-left: 100px;
+	display: flex;
+	flex-direction: column;
+	flex: 45%;
 }
 /*End Upcoming Events*/
 
