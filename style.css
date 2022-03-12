@@ -311,7 +311,7 @@ li {
 	  display: flex;
 	  flex-direction: column;
 	  background-color: #4A4A4A;
-	  height: 450px;
+	  height: 425px;
   }
 
 .bottomNews {
@@ -322,6 +322,7 @@ li {
 .newsletter {
 	display: flex;
 	justify-content: center;
+	padding-top: 50px;
 }
 
 .newsletterHeader{
